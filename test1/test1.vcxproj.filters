@@ -33,7 +33,7 @@
     <ClCompile Include="Test_6.c">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="Test_7.c">
+    <ClCompile Include="Test_7-1.c">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
