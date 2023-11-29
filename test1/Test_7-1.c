@@ -212,19 +212,21 @@
 // 	return 0;
 // }
 // T4.(3)
+//#include <stdio.h>
+//#include <string.h>
+//int main(int argc, char const *argv[])
+//{
+//	char c,str[100];int i,j;
+//	gets(str);
+//	printf("ÇëÊäÈëÒªÉ¾³ıµÄ×Ö·û");
+//	c=getchar();
+//	for(i=0;i<strlen(str);i++){
+//		if(str[i]==c){
+//			for(j=i;j<strlen(str);j++) str[j]=str[j+1] ;
+//		}
+//	}
+//	puts(str);
+//	return 0;
+//}
+//T4.(4)
 #include <stdio.h>
-#include <string.h>
-int main(int argc, char const *argv[])
-{
-	char c,str[100];int i,j;
-	gets(str);
-	printf("ÇëÊäÈëÒªÉ¾³ıµÄ×Ö·û");
-	c=getchar();
-	for(i=0;i<strlen(str);i++){
-		if(str[i]==c){
-			for(j=i;j<strlen(str);j++) str[j]=str[j+1] ;
-		}
-	}
-	puts(str);
-	return 0;
-}
