@@ -212,22 +212,22 @@
 // 	return 0;
 // }
 // T4.(3)
-//#include <stdio.h>
-//#include <string.h>
-//int main(int argc, char const *argv[])
-//{
-//	char c,str[100];int i,j;
-//	gets(str);
-//	printf("请输入要删除的字符");
-//	c=getchar();
-//	for(i=0;i<strlen(str);i++){ //遍历字符串的字符
-//		if(str[i]==c){//判断是否为要删除的字符
-//			for(j=i;j<strlen(str);j++) str[j]=str[j+1];//直接覆盖要删除的字符，并把其后每一位字符都向前移
-//		}
-//	}
-//	puts(str);
-//	return 0;
-//}
+// #include <stdio.h>
+// #include <string.h>
+// int main(int argc, char const *argv[])
+// {
+// 	char c,str[100];int i,j;
+// 	gets(str);
+// 	printf("请输入要删除的字符");
+// 	c=getchar();
+// 	for(i=0;i<strlen(str);i++){ //遍历字符串的字符
+// 		if(str[i]==c){//判断是否为要删除的字符
+// 			for(j=i;j<strlen(str);j++) str[j]=str[j+1];//直接覆盖要删除的字符，并把其后每一位字符都向前移
+// 		}
+// 	}
+// 	puts(str);
+// 	return 0;
+// }
 // T4.(4)
 // #include <stdio.h>
 // int main(int argc, char const *argv[])
