@@ -220,13 +220,51 @@
 //	gets(str);
 //	printf("请输入要删除的字符");
 //	c=getchar();
-//	for(i=0;i<strlen(str);i++){
-//		if(str[i]==c){
-//			for(j=i;j<strlen(str);j++) str[j]=str[j+1] ;
+//	for(i=0;i<strlen(str);i++){ //遍历字符串的字符
+//		if(str[i]==c){//判断是否为要删除的字符
+//			for(j=i;j<strlen(str);j++) str[j]=str[j+1];//直接覆盖要删除的字符，并把其后每一位字符都向前移
 //		}
 //	}
 //	puts(str);
 //	return 0;
 //}
-//T4.(4)
-#include <stdio.h>
+// T4.(4)
+// #include <stdio.h>
+// int main(int argc, char const *argv[])
+// {
+// 	int i,j,a[4][4],sum1=0,sum2=0,max,min,maxi,mini;//初始化sum1与sum2的值，避免出现奇怪bug
+// 	//读入矩阵
+// 	for(i=0;i<4;i++){
+// 		for(j=0;j<4;j++){
+// 			scanf("%d",&a[i][j]);
+// 		}
+// 	}
+// 	for(i=0;i<4;i++){
+// 		sum1+=a[i][i];//计算对角线上的和
+// 		if((i+1)%2==0){//i为索引，从0计数，+1代表行数
+// 			sum2+=a[i][i];//计算在即在对角线又在偶数行上的和
+// 		}
+// 		max=a[0][0];
+// 		min=a[0][0];
+// 		if(a[i][i]>max){
+// 			max=a[i][i];
+// 			maxi=i;
+// 		}//记录最大
+// 		if(a[i][i]<min){
+// 			min=a[i][i];
+// 			mini=i;
+// 		}//记录最小
+// 	}
+// 	//交换最大最小
+// 	a[maxi][maxi] = max;
+// 	a[mini][mini] = min;
+// 	//输出
+// 	printf("对角线元素之和为%d,既在对角线又在偶数行元素之和为%d\n",sum1,sum2);
+// 	for(i=0;i<4;i++){
+// 		for(j=0;j<4;j++){
+// 			printf("%d\t",a[i][j]);
+// 		}
+// 		printf("\n");
+// 	}
+// 	return 0;
+// }
