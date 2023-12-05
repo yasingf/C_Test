@@ -10,7 +10,7 @@
       "cppStandard": "${default}",
       "intelliSenseMode": "windows-gcc-x86",
       "compilerArgs": [
-        ""
+        "fexec-charset=gbk"
       ]
     }
   ],
