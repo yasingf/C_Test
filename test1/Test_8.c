@@ -83,22 +83,66 @@
 //     return 0;
 // }
 // T3.(2)
-#include <stdio.h>
-int sum(int x[],int n){
-    int i,s=0;
-    for(i=0;i<n;i++){
-        s+=x[i];
-    }
-    return s;
-}
-int main(int argc, char const *argv[])
-{
-    int i,i1,i2,result,x[10];
-    for(i=0;i<10;i++){
-        scanf("%d",&x[i]);
-    }
-    result=sum(x+i1,x+i2);
-    return 0;
-}
+// #include <stdio.h>
+// int sum(int x[],int n){
+//     int i,s=0;
+//     for(i=0;i<=n;i++){
+//         s+=x[i];
+//     }
+//     return s;
+// }
+// int main(int argc, char const *argv[])
+// {
+//     int i,i1,i2,result,x[10];
+//     for(i=0;i<10;i++){
+//         scanf("%d",&x[i]);
+//     }
+//     scanf("%d%d",&i1,&i2);
+//     result=sum(x+i1-1,i2-i1);//数组名x实际为指针，对指针+—整数n即为移动指针n个单位，在这里，x+i1-1代表第i1个元素
+//     //原题目中写的是x+i1,这代表着i1+1位元素，而题目要求从i1位开始，因此-1处理
+//     printf("Sum=%d\n",result);
+//     return 0;
+// }
+// T3.(3)
+// #include <stdio.h>
+// #include <string.h>
+// #define MAX 80
+// void Insert(char s[]);
+// int main(int argc, char const *argv[])
+// {
+//     char string[2*MAX];
+//     scanf("%s",string);
+//     Insert(string);
+//     puts(string);
+//     return 0;
+// }
+// void Insert(char srcStr[]){
+//     char strTemp[MAX];int i=0,j=0;
+//     strcpy(strTemp,srcStr);
+//     while (strTemp[j]){//以是否为\0作为循环条件
+//        srcStr[i++]=strTemp[j++];//复制，然后索引+1，原题目中空出一行来做j++，与该行功能一样
+//        srcStr[i++]=' '; //填空格
+//     }
+//     srcStr[i] = '\0';
+// }
+// T3.(4)
+// #include <stdio.h>
+// void a(int i){
+//     int j,k;
+//     for(j=1;j<30-i;j++) printf("%c",' ');//输出前方空格，保证菱形形状
+//     for(k=1;k<=2*i-1;k++) printf("%d",i);//输出数字
+//     printf("\n");
+// }
+// int main(int argc, char const *argv[])
+// {
+//     int i;
+//     for(i=1;i<=7;i++) a(i);
+//     for(i=6;i>=1;i--) a(i);
+//     return 0;
+// }
+// T4.1
+
+
+
 
 
