@@ -141,28 +141,33 @@
 //     return 0;
 // }
 // T4.1
-#include <stdio.h>
-void EcMaxMin(int a[],int n){
-    int i, min = a[0], max = a[0], mini = 0, maxi = 0;
-    for(i=0;i<n;i++){//找出最大值与最小值并记录位置
-        if(a[i]>max){//最大值
-            max=a[i];maxi=i;
-        }
-        if(a[i]<min){//最小值
-            min=a[i];mini=i;
-        }
-    }
-    a[mini] = max;
-    a[maxi] = min;
-}
-int main(int argc, char const *argv[])
-{
-    int a[10],i;
-    for(i=0;i<10;i++) scanf("%d",&a[i]);
-    EcMaxMin(a,sizeof(a)/sizeof(a[0]));
-    for(i=0;i<10;i++) printf("%d\t",a[i]);
-    return 0;
-}
+// #include <stdio.h>
+// void EcMaxMin(int a[],int n){
+//     int i, min = a[0], max = a[0], mini = 0, maxi = 0;
+//     for(i=0;i<n;i++){//找出最大值与最小值并记录位置
+//         if(a[i]>max){//最大值
+//             max=a[i];maxi=i;
+//         }
+//         if(a[i]<min){//最小值
+//             min=a[i];mini=i;
+//         }
+//     }
+//     a[mini] = max;
+//     a[maxi] = min;
+// }
+// int main(int argc, char const *argv[])
+// {
+//     int a[10],i;
+//     for(i=0;i<10;i++) scanf("%d",&a[i]);
+//     EcMaxMin(a,sizeof(a)/sizeof(a[0]));
+//     /*sizeof说明
+//     sizeof(a)统计的是a所占的字节数，sizeof(a[0])统计的则为元素所占的字节数
+//     函数传递数组的过程中传递的是指针，即数组第1个元素的内存地址，在函数内部无法获取外部数组的元素数量
+//     这里写sizeof是较为通用的一种写法，在本例子中也可以直接写10
+//     */
+//     for(i=0;i<10;i++) printf("%d\t",a[i]);
+//     return 0;
+// }
 
 
 
