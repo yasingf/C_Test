@@ -141,6 +141,28 @@
 //     return 0;
 // }
 // T4.1
+#include <stdio.h>
+void EcMaxMin(int a[],int n){
+    int i, min = a[0], max = a[0], mini = 0, maxi = 0;
+    for(i=0;i<n;i++){//找出最大值与最小值并记录位置
+        if(a[i]>max){//最大值
+            max=a[i];maxi=i;
+        }
+        if(a[i]<min){//最小值
+            min=a[i];mini=i;
+        }
+    }
+    a[mini] = max;
+    a[maxi] = min;
+}
+int main(int argc, char const *argv[])
+{
+    int a[10],i;
+    for(i=0;i<10;i++) scanf("%d",&a[i]);
+    EcMaxMin(a,sizeof(a)/sizeof(a[0]));
+    for(i=0;i<10;i++) printf("%d\t",a[i]);
+    return 0;
+}
 
 
 

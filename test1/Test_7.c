@@ -197,7 +197,7 @@
 // #include <stdio.h>
 // int main(int argc, char const *argv[])
 // {
-// 	int A=[2][3],B=[2][3],C=[2][3],i,j;
+// 	int A[2][3],B[2][3],C[2][3],i,j;
 // 	//¶ÁÈë¾ØÕóA£¬B
 // 	for(i=0;i<2;i++){
 // 		for(j=0;j<3;j++) scanf("%d",&A[i][j]);
