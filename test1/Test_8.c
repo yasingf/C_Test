@@ -169,6 +169,57 @@
 //     return 0;
 // }
 
+// T4.(2)
+// #include <stdio.h>
+// #include <string.h>
+// int isHw(char str[]){
+//     int i,j,status=0,n;char str1[30]={};
+//     n=strlen(str);
+//     for(i=n-1,j=0;i>=0;i--,j++){
+//         str1[j] = str[i];
+//     }//定义一个数组，用来记录反序后的字符串
+//     if(!strcmp(str,str1)){//与原字符串比较
+//         status=1;
+//     }
+//     return status;
+// }
+// int main(int argc, char const *argv[])
+// {
+//     char str[5][30];int i=0,sum=0;
+//     for(i=0;i<5;i++){
+//         gets(str[i]);
+//     }//读入5个字符串
+//     for(i=0;i<5;i++){
+//         if(isHw(str[i])){
+//             sum++;
+//         }
+//     }
+//     printf("回文共有%d个",sum);
+//     return 0;
+// }
+//T4.(3)
+// #include <math.h>
+// #include <stdio.h>
+// long int DtoB(int num){
+//    int numb[100]={0}, i = 0, n; long int num2 = 0;
+//    do{
+//         i++;
+//         numb[i]=num%2;
+//         num=num/2;
+//    } while (num!=0);
+//    for(;i>0;i--){
+//         num2+=numb[i] * pow(10,i);//这里可以写成pow(10,i-1),在visual studio上运行正常，但gcc编译后有点问题，自己试一下哪种方法可行吧
+//    }
+//    return num2/10;
+// }
+// int main(int argc, char const *argv[])
+// {
+//     int num;
+//     scanf("%d",&num);
+//     printf("二进制为：%ld",DtoB(num));
+//     return 0;
+// }
+
 
 
 
