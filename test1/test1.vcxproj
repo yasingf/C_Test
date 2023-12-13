@@ -135,6 +135,7 @@
     <ClCompile Include="Test_6.c" />
     <ClCompile Include="Test_7.c" />
     <ClCompile Include="Test_8.c" />
+    <ClCompile Include="Test_9.c" />
     <ClCompile Include="实验总.c">
       <SDLCheck Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</SDLCheck>
     </ClCompile>
