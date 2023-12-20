@@ -74,6 +74,7 @@
 //     return 0;
 // }
 // T3.(1)
+
 // #include <stdio.h>
 // int main(int argc, char const *argv[])
 // {
@@ -91,3 +92,94 @@
 //     printf("max=%d\n", max);
 //     return 0;
 // }
+
+// T3.(2)
+// #include <stdio.h>
+// int main(int argc, char const *argv[])
+// {
+//     int a[8], *p, i, j, k, t;
+//     p = a;//将数组首元素的地址赋值给p
+//     printf("Input the numbers:");
+//     for (i = 0; i < 8; i++)
+//     {
+//         scanf("%d", p + i);
+//     }
+//     for (i = 0; i < 7; i++)
+//     {
+//         for (j = i; j < 8; j++)
+//         {
+//             if (j == i || *(p + j) < t)
+//             {
+//                 t = *(p + j);
+//                 k = j;
+//             }
+//         }
+//         if (k != i)
+//         {
+//             t = *(p + k);
+//             *(p + k) = *(p + i);
+//             *(p + i) = t;
+//         }
+//     }
+//     for (i = 0; i < 8; i++)
+//         printf("%5d", *(p + i));
+//     return 0;
+// }
+
+// T3.(3)
+// #include <stdio.h>
+// #include <string.h>
+// int chnum(char *p);
+// int main(int argc, char const *argv[])
+// {
+//     char str[6];
+//     int n;
+//     gets(str);
+//     if (*str == '-')
+//         n = -chnum(str + 1);
+//     else
+//         n = chnum(str);
+//     printf("%d\n", n);
+//     return 0;
+// }
+// int chnum(char *p)
+// {
+//     int num = 0, k, len, j;
+//     len = strlen(p);
+//     for (; *p != '\0'; p++)
+//     {
+//         k = *p - '0';
+//         j = (--len);
+//         while (j-->0)
+//         {
+//             k *= 10;
+//         }
+//         num = num + k;
+//     }
+//     return num;
+// }
+
+// T3.(4)
+// #include <stdio.h>
+// int main(int argc, char const *argv[])
+// {
+//     int i,k=0;char a[80],b[110],*p;
+//     p=a;
+//     gets(p);
+//     for(i=0;*p!='\0';p++,k++,i++){
+//         if(i%3==0&&i!=0){b[k]=' ';k++;};
+//         b[k]=*p;
+//     }
+//     b[k]='\0';
+//     puts(b);
+//     return 0;
+// }
+
+//T4.(1)
+#include<stdio.h>
+int main(int argc, char const *argv[])
+{
+    char str[100];int num[100];
+    return 0;
+}
+
