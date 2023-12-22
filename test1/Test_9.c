@@ -176,10 +176,67 @@
 // }
 
 //T4.(1)
-#include<stdio.h>
-int main(int argc, char const *argv[])
-{
-    char str[100];int num[100];
-    return 0;
-}
+// #include<stdio.h>
+// #include <math.h>
+// int main(int argc, char const *argv[])
+// {
+//     char str[100], * s; int num[100] = { 0 }, i = 0, n = 0, j;
+//     s=str;
+//     gets(str);
+//     for(;*s!='\0';s++){
+//         if(*s>='0'&&*s<='9'){
+//             num[i++]=*s-'0';
+//         }
+//     }i--;
+//     for(j=0;i>=0;i--,j++){
+//         n+=num[j] * pow(10,i);
+//     }
+//     printf("%d",n);
+//     return 0;
+// }
 
+// T4.(2)
+// #include <stdio.h>
+// void encrypt(char *str[]){
+//     char *c;
+//     c=str;
+//     for(;*c!='\0';c++){
+//         if(*c>='a'&&*c<'x'){
+//             *c+=3;
+//         }else if(*c>='x'&&*c<='z'){
+//             switch (*c)
+//             {
+//             case 'x': *c = 'a';break;
+//             case 'y': *c = 'b';break;
+//             case 'z': *c = 'c';break;
+//             }
+//         }
+//     }
+// }
+// void decrypt(char str[]){
+//     char *c;
+//     c=str;
+//     for(;*c!='\0';c++){
+//         if(*c>='d'&&*c<='z'){
+//             *c-=3;
+//         }else if(*c>='a'&&*c<='c'){
+//             switch (*c)
+//             {
+//             case 'a': *c = 'x';break;
+//             case 'b': *c = 'y';break;
+//             case 'c': *c = 'z';break;
+//             }
+//         }
+//     }
+// }
+// int main(int argc, char const *argv[])
+// {
+//     char str[100];
+//     gets(str);
+//     printf("原始字符串：%s\n",str);
+//     encrypt(str);
+//     printf("加密后:%s\n",str);
+//     decrypt(str);
+//     printf("解密后:%s\n",str);
+//     return 0;
+// }
