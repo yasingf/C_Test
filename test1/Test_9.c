@@ -240,3 +240,23 @@
 //     printf("解密后:%s\n",str);
 //     return 0;
 // }
+
+// T4.(3)
+// #include <stdio.h>
+// int main(int argc, char const *argv[])
+// {
+//     char str1[10]="abc",str2[]="bcd";//注意大小，避免内存溢出
+//     printf("拼接后：%s",strcat(str1,str2));
+//     return 0;
+// }
+// char *strcat(char *str1,const char *str2){
+//     char *p = str1;
+//     while(*p!='\0'){
+//         p++;
+//     }
+//     while (*str2!='\0')
+//     {
+//         *p++ = *str2++; 
+//     }
+//     return str1;
+// }
